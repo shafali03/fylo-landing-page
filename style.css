@@ -7,6 +7,8 @@ body {
   padding: 0;
   color: hsl(243, 87%, 12%);
   font-size: 1.2em;
+  max-width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -120,6 +122,8 @@ button {
 .light-blue::before {
   content: '';
   background-image: url('./images/bg-curve-desktop.svg');
+  background-size: cover;
+  background-position: center center;
   position: absolute;
   top: -60px;
   left: 0;
@@ -221,4 +225,73 @@ footer .circle {
 
 footer p {
   text-align: right;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  .light-purple::before {
+    background-image: url('./images/bg-curve-mobile.svg');
+    height: 80px;
+  }
+
+  .flex {
+    flex-direction: column; 
+  }
+
+  .flex > div {
+    width: 100%;
+  }
+
+  /* .flex img {
+    margin-top: 30px;
+  } */
+
+  .flex > div:first-child {
+  margin-right: 0px
+}
+
+.flex > div:last-child {
+  margin-left: 0px;
+}
+
+  .testimonial-box {
+    width: 100%;
+  }
+
+
+
+
+.light-purple form input {
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  flex: 1;
+}
+
+.light-purple form button {
+  margin: 0;
+  width: 100%;
+}
+
+.illustration {
+  margin: 30px;
+}
+
+.user-info {
+  justify-self: center;
+}
+
+
+.light-purple form button {
+  margin: 20px 0;
+  width: 100%;
+}
+
+
+  footer ul {
+    padding: 0;
+    width: 100%;
+  }
 }
