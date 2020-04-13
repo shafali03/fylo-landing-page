@@ -3,8 +3,14 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   color: hsl(243, 87%, 12%);
   font-size: 1.2em;
+}
+
+a {
+  color: hsl(160, 55%, 42%);
 }
 
 img {
@@ -33,6 +39,13 @@ h2 {
   flex: 1;
 }
 
+.flex > div:first-child {
+  margin-right: 20px
+}
+
+.flex > div:last-child {
+  margin-left: 20px;
+}
 /* Nav styling */
 
 nav {
@@ -82,4 +95,21 @@ button {
   flex: 0.3;
   padding: 15px;
   margin-left: 10px;
+}
+
+.light-blue {
+  background-color: hsl(240, 75%, 98%);
+  margin-top: 100px;
+  position: relative;
+  padding: 50px 0;
+}
+
+.light-blue::before {
+  content: '';
+  background-image: url('./images/bg-curve-desktop.svg');
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 60px;
+  width: 100%;
 }
