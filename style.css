@@ -11,6 +11,10 @@ img {
   max-width: 100%;
 }
 
+h1,
+h2 {
+  font-family: 'Railway', sans-serif;
+}
 
 .container {
   padding: 20px;
@@ -54,3 +58,28 @@ nav ul a {
 }
 
 
+/* form section */
+
+form {
+display: flex;
+}
+
+
+input {
+  border: 1px solid hsl(224, 93%, 12%);
+  border-radius: 2px;
+  padding: 15px;
+  flex: 0.7;
+
+}
+
+button {
+  border: 1px solid hsl(224, 93%, 58%);
+  background-color: hsl(224, 93%, 58%);
+  border-radius: 4px;
+  color: #fff;
+  padding: 15px;
+  flex: 0.3;
+  padding: 15px;
+  margin-left: 10px;
+}
