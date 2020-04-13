@@ -18,7 +18,8 @@ img {
 }
 
 h1,
-h2 {
+h2,
+h4 {
   font-family: 'Railway', sans-serif;
 }
 
@@ -89,6 +90,7 @@ input {
 button {
   border: 1px solid hsl(224, 93%, 58%);
   background-color: hsl(224, 93%, 58%);
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   color: #fff;
   padding: 15px;
@@ -112,4 +114,38 @@ button {
   left: 0;
   height: 60px;
   width: 100%;
+}
+
+/* Testimonial */
+
+.testimonial-box {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 40px;
+  width: 80%;
+}
+
+.testimonial-box p {
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.user-info {
+  display: flex;
+  margin-top: 20px;
+}
+
+.user-info img {
+  border-radius: 50%;
+  height: 50px;
+  margin: 10px;
+  width: 50px;
+}
+
+.user-info h4 {
+  font-weight: 700;
+  margin: 0;
 }
